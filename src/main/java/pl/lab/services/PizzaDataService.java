@@ -59,7 +59,7 @@ public class PizzaDataService implements IPizzaDataService {
         return Arrays.stream(pizzas);
     }
 
-    private long countMeatIngredients(Pizza pizza){
+    private long countMeatIngredients(Pizza pizza) {
         return pizza.getIngredients().stream().filter(Ingredient::isMeat).count();
     }
 }
